@@ -1,9 +1,15 @@
-import { useState, useMemo, useEffect } from "react"
+import {SiteContext, AuthContext} from "./context"
+import Home from "./Home"
+
 
 function App () {
+
   return (
-    <>
-    </>
+    <SiteContext>
+      <AuthContext>
+        <Home />
+      </AuthContext>
+    </SiteContext>
   )
 }
 
